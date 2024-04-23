@@ -7,8 +7,8 @@ import (
  
 func main() {
 	e := echo.New()
-	e.GET("/emp", getEmps)
-   e.Logger.Fatal(e.Start(":8080"))
+	e.GET("/", getEmps)
+   e.Logger.Fatal(e.Start(":80"))
 }
 func getEmps(ctx echo.Context) error {
 
